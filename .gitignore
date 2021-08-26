@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+venv/
+STOCK_CAT/
+IV_DETAIL.TXT
+data_updated_IV_DETAIL.TXT
+test
