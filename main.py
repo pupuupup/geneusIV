@@ -79,12 +79,10 @@ def main():
             title = title.strip()
             parentheses = re.search(r'\(.*\)', line)
             data = {}
-            if parentheses:
-                data['0'] = '-'
-            else:
-                data['0'] = '+'
-            data['DESIGNATION'] = title
             data['QUANTITY'] = finalFloats[0]
+            if parentheses:
+                data['QUANTITY'] = -1*data['QUANTITY']
+            data['DESIGNATION'] = title
             data['PRICE'] = finalFloats[1]
             data['AMOUNT'] = finalFloats[2]
 
